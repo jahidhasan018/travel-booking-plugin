@@ -1,0 +1,32 @@
+/* Basic admin styles */
+.wrap {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.wrap h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-table th {
+    font-weight: bold;
+}
+
+.form-table td input[type="text"], .form-table td select, .form-table td input[type="date"], .form-table td input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+
+.form-table td label {
+   display: inline-block;
+   margin-right: 10px;
+}

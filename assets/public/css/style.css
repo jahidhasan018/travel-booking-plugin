@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0033cc, #000066);
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .tab {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .tab.active {
+    border-bottom: 3px solid #ff0066;
+  }
+  
+  .tab-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .search-form .form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #ddd;
+  }
+  
+  .input-container span.material-icons {
+    margin-right: 5px;
+    color: #555;
+  }
+  
+  .search-form .form-input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .switch-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+  }
+  
+  .search-form .btn-search {
+    background: #ff0066;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+  
+  .search-form .btn-search:hover {
+    background: #cc0052;
+  }
+  
+  .form-options {
+    margin-top: 10px;
+  }
+  
+  .form-options label {
+    display: block;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-form .form-row {
+      flex-direction: column;
+    }
+  
+    .input-container {
+      flex-direction: row;
+    }
+  
+    .switch-icon {
+      display: none;
+    }
+  
+    .btn-search {
+      align-self: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tab {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+  
+    .btn-search {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .input-container span.material-icons {
+      font-size: 18px;
+    }
+  
+    .form-input {
+      font-size: 12px;
+    }
+  }
+  
